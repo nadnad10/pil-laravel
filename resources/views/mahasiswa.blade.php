@@ -38,6 +38,46 @@
 
   <div class="container" style="margin-left: 30px">
     <h1> Ini adalah halaman Mahasiswa</h1>
+
+    {{-- 
+      ROWSPAN = untuk menggabungkan baris
+      COLSPAN = untuk menggabungkan kolom
+      --}}
+
+<table class="table table-danger table-sm table-hover table-striped table-bordered
+text-center">
+  <thead>
+    <tr>
+      <th>Nim</th>
+      <th>Nama Mahasiswa</th>
+      <th>Jenis Kelamin</th>
+      <th colspan="2">TTL</th>
+    </tr>
+  </thead>
+  <body>
+    <tr>
+      <td>0702223142</td>
+      <td>Nadia</td>
+      <td>Perempuan</td>
+      <td>10 April 2004</td>
+      <td rowspan="3">Medan Tuntungan</td>
+    </tr>
+    <tr>
+      <td>0702223148</td>
+      <td>Putri</td>
+      <td>Perempuan</td>
+      <td>10 April 2004</td>
+     
+    </tr>
+    <tr>
+      <td>0702223145</td>
+      <td>Siti</td>
+      <td>Perempuan</td>
+      <td>10 April 2004</td>
+
+    </tr>
+  </body>
+</table>
     </div>
    
   </ul>
