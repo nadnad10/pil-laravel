@@ -55,19 +55,15 @@ text-center">
     </tr>
   </thead>
   <tbody>
-    <?php $nilai_awal = 0; ?>
-    @while ($nilai_awal < $jumlah)
+   @for ($i = 0; $i < $jumlah; $i++)
+       <tr>
+        <td>{{ $nim[$i] }}</td>
+          <td>{{ $nama[$i] }}</td>
+          <td>Perempuan</td>
+          <td>Medan Tuntungan</td>
 
-    <tr>
-      <td>{{ $nim[$nilai_awal] }}</td>
-      <td>{{ $nama[$nilai_awal] }}</td>
-      <td>Perempuan</td>
-      <td>10 April 2004</td>
-      <td>Medan Tuntungan</td>
-    </tr>
-
-    <?php $nilai_awal++ ?>
-    @endwhile
+       </tr>
+   @endfor
   </tbody>
 </table>
 
