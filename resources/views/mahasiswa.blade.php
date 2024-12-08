@@ -54,30 +54,23 @@ text-center">
       <th colspan="2">TTL</th>
     </tr>
   </thead>
-  <body>
-    <tr>
-      <td>0702223142</td>
-      <td>Nadia</td>
-      <td>Perempuan</td>
-      <td>10 April 2004</td>
-      <td rowspan="3">Medan Tuntungan</td>
-    </tr>
-    <tr>
-      <td>0702223148</td>
-      <td>Putri</td>
-      <td>Perempuan</td>
-      <td>10 April 2004</td>
-     
-    </tr>
-    <tr>
-      <td>0702223145</td>
-      <td>Siti</td>
-      <td>Perempuan</td>
-      <td>10 April 2004</td>
+  <tbody>
+    <?php $nilai_awal = 0; ?>
+    @while ($nilai_awal < $jumlah)
 
+    <tr>
+      <td>{{ $nim[$nilai_awal] }}</td>
+      <td>{{ $nama[$nilai_awal] }}</td>
+      <td>Perempuan</td>
+      <td>10 April 2004</td>
+      <td>Medan Tuntungan</td>
     </tr>
-  </body>
+
+    <?php $nilai_awal++ ?>
+    @endwhile
+  </tbody>
 </table>
+
     </div>
    
   </ul>
